@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Contrail One', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 1em;
+    color:#fff;
+    margin-bottom: 50px;
+}
+
+.content a{
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.content a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.background-clip{
+position: absolute;
+right: 0;
+bottom: 0;
+z-index: -1;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 15em;
+    height:15em;
+    margin-bottom: 50px;
+}
+.logo-container{
+    width: 100%;
+}
+
+.logo-contact{
+    border-radius: 50%;
+    width: 10%;
+    height:10%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.parrafo{
+    color: #05ca47;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    color: #05ca47;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.contactForm{
+    width:640px; 
+    height:480px; 
+    margin-bottom: 20px;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
